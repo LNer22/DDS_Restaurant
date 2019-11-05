@@ -1,6 +1,6 @@
 ﻿namespace DDS_Restaurant_Solution.Forms2
 {
-    partial class AñadirCliente
+    partial class frmAñadirCliente
     {
         /// <summary>
         /// Required designer variable.

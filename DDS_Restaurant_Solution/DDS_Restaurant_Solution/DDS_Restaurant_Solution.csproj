@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\..\Desktop\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -42,6 +45,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -56,47 +60,54 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\DataAccess.cs" />
-    <Compile Include="Forms2\AñadirCliente.cs">
+    <Compile Include="Data\GeneralClass.cs" />
+    <Compile Include="Forms\frmAñadirCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms2\AñadirCliente.Designer.cs">
-      <DependentUpon>AñadirCliente.cs</DependentUpon>
+    <Compile Include="Forms\frmAñadirCliente.Designer.cs">
+      <DependentUpon>frmAñadirCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms2\AñadirEmpleado.cs">
+    <Compile Include="Forms\frmAñadirEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms2\AñadirEmpleado.Designer.cs">
-      <DependentUpon>AñadirEmpleado.cs</DependentUpon>
+    <Compile Include="Forms\frmAñadirEmpleado.Designer.cs">
+      <DependentUpon>frmAñadirEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms3\Cliente.cs">
+    <Compile Include="Forms\frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms3\Cliente.Designer.cs">
-      <DependentUpon>Cliente.cs</DependentUpon>
+    <Compile Include="Forms\frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms3\Detalle.cs">
+    <Compile Include="Forms\frmDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms3\Detalle.Designer.cs">
-      <DependentUpon>Detalle.cs</DependentUpon>
+    <Compile Include="Forms\frmDetalle.Designer.cs">
+      <DependentUpon>frmDetalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms3\Mesas.cs">
+    <Compile Include="Forms\frmMesas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms3\Mesas.Designer.cs">
-      <DependentUpon>Mesas.cs</DependentUpon>
+    <Compile Include="Forms\frmMesas.Designer.cs">
+      <DependentUpon>frmMesas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms3\Mesas2.cs">
+    <Compile Include="Forms\frmMesasOrdenes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms3\Mesas2.Designer.cs">
-      <DependentUpon>Mesas2.cs</DependentUpon>
+    <Compile Include="Forms\frmMesasOrdenes.Designer.cs">
+      <DependentUpon>frmMesasOrdenes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms3\Pedido.cs">
+    <Compile Include="Forms\frmPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms3\Pedido.Designer.cs">
-      <DependentUpon>Pedido.cs</DependentUpon>
+    <Compile Include="Forms\frmPedido.Designer.cs">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -125,26 +136,29 @@
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms2\AñadirCliente.resx">
-      <DependentUpon>AñadirCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmAñadirCliente.resx">
+      <DependentUpon>frmAñadirCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms2\AñadirEmpleado.resx">
-      <DependentUpon>AñadirEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmAñadirEmpleado.resx">
+      <DependentUpon>frmAñadirEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms3\Cliente.resx">
-      <DependentUpon>Cliente.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms3\Detalle.resx">
-      <DependentUpon>Detalle.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmDetalle.resx">
+      <DependentUpon>frmDetalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms3\Mesas.resx">
-      <DependentUpon>Mesas.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmMesas.resx">
+      <DependentUpon>frmMesas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms3\Mesas2.resx">
-      <DependentUpon>Mesas2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmMesasOrdenes.resx">
+      <DependentUpon>frmMesasOrdenes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms3\Pedido.resx">
-      <DependentUpon>Pedido.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmPedido.resx">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -174,10 +188,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user.png" />
+    <None Include="Resources\51882.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\key.jpg" />
@@ -202,6 +213,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Agregar Imagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito-de-compras-negro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-menu-order-restaurant-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_122068.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juego-de-cubiertos-de-comedor-de-tres-piezas-en-siluetas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tables.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proximo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

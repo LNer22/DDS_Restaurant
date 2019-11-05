@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDS_Restaurant_Solution.Forms2
+namespace DDS_Restaurant_Solution.Forms3
 {
-    public partial class AñadirEmpleado : Form
+    public partial class frmMesas : Form
     {
-        public AñadirEmpleado()
+        public frmMesas()
         {
             InitializeComponent();
         }

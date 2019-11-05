@@ -1,6 +1,6 @@
 ﻿namespace DDS_Restaurant_Solution.Forms2
 {
-    partial class AñadirEmpleado
+    partial class frmAñadirEmpleado
     {
         /// <summary>
         /// Required designer variable.
@@ -169,7 +169,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox1.Image = global::DDS_Restaurant_Solution.Properties.Resources.Agregar_Imagen;
             this.pictureBox1.Location = new System.Drawing.Point(62, 160);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(121, 125);

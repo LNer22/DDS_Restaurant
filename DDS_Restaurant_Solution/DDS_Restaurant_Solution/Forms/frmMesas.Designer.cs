@@ -1,6 +1,6 @@
 ﻿namespace DDS_Restaurant_Solution.Forms3
 {
-    partial class Mesas
+    partial class frmMesas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mesas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMesas));
             this.DgvMesas = new System.Windows.Forms.DataGridView();
             this.ColumMesas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumCapacidad = new System.Windows.Forms.DataGridViewTextBoxColumn();

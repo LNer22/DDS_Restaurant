@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DDS_Restaurant_Solution.Forms2
 {
-    public partial class AñadirCliente : Form
+    public partial class frmAñadirCliente : Form
     {
-        public AñadirCliente()
+        public frmAñadirCliente()
         {
             InitializeComponent();
         }

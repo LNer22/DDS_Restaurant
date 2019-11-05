@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DDS_Restaurant_Solution.Forms3
 {
-    public partial class Mesas2 : Form
+    public partial class frmCliente : Form
     {
-        public Mesas2()
+        public frmCliente()
         {
             InitializeComponent();
         }
