@@ -1,4 +1,4 @@
-﻿namespace DDS_Restaurant_Solution.Forms3
+﻿namespace DDS_Restaurant_Solution.Forms
 {
     partial class frmDetalle
     {

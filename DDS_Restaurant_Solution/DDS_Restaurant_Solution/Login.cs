@@ -83,6 +83,7 @@ namespace DDS_Restaurant_Solution
             }
         }
 
+
         private void textBox2_Leave_1(object sender, EventArgs e)
         {
             if (textBox2.Text == "")
@@ -102,5 +103,6 @@ namespace DDS_Restaurant_Solution
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using DDS_Restaurant_Solution.Forms;
 
 
 namespace DDS_Restaurant_Solution.Forms
@@ -82,18 +83,29 @@ namespace DDS_Restaurant_Solution.Forms
             if (panMenuVertical.Width == 42)
             {
                 panMenuVertical.Width = 182;
-                btnSlideMenu.Image = DDS_Restaurant_Solution.Properties.Resources.atras;
+                btnSlideMenu.Image = DDS_Restaurant_Solution.Properties.Resources.flecha_hacia_la_izquierda;
             }
             else
             {
                 panMenuVertical.Width = 42;
-                btnSlideMenu.Image = DDS_Restaurant_Solution.Properties.Resources.proximo;
+                btnSlideMenu.Image = DDS_Restaurant_Solution.Properties.Resources.flecha_derecha;
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //AbrirFormularioHijo(new );
+            AbrirFormularioHijo(new frmMesasOrdenes());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (panContenedor.Controls.Count > 0)
+                panContenedor.Controls.RemoveAt(0);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new frmMesas());
         }
     }
 }
