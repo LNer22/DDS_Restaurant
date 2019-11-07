@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDS_Restaurant_Solution.Forms2
+namespace DDS_Restaurant_Solution.Forms
 {
     public partial class frmAñadirCliente : Form
     {

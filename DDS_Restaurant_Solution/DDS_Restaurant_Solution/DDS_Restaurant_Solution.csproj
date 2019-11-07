@@ -277,5 +277,11 @@
   <ItemGroup>
     <None Include="Resources\proximo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-hacia-la-izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-derecha.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
