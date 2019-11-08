@@ -16,5 +16,10 @@ namespace DDS_Restaurant_Solution.Forms2
         {
             InitializeComponent();
         }
+
+        private void frmAñadirEmpleado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

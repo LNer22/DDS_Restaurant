@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button40 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -53,6 +46,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button38 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
@@ -71,104 +67,14 @@
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(41, 5);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(829, 28);
-            this.panel11.TabIndex = 8;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.button13);
-            this.panel10.Controls.Add(this.button12);
-            this.panel10.Controls.Add(this.button11);
-            this.panel10.Controls.Add(this.button10);
-            this.panel10.Controls.Add(this.button9);
-            this.panel10.Controls.Add(this.button8);
-            this.panel10.Controls.Add(this.button7);
-            this.panel10.Location = new System.Drawing.Point(1, 5);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(34, 472);
-            this.panel10.TabIndex = 4;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(0, 199);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(34, 38);
-            this.button13.TabIndex = 6;
-            this.button13.Text = "Comidas";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(0, 165);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(34, 38);
-            this.button12.TabIndex = 5;
-            this.button12.Text = "Clientes";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(0, 131);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(34, 38);
-            this.button11.TabIndex = 4;
-            this.button11.Text = "Mesas";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(0, 96);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(34, 38);
-            this.button10.TabIndex = 3;
-            this.button10.Text = "Pago";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(0, 64);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(34, 38);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "Pedidos";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(0, 29);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(34, 38);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "Home";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(34, 38);
-            this.button7.TabIndex = 0;
-            this.button7.Text = ">>";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // panel8
             // 
@@ -177,10 +83,26 @@
             this.panel8.Controls.Add(this.label2);
             this.panel8.Controls.Add(this.label1);
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(290, 431);
+            this.panel8.Location = new System.Drawing.Point(272, 409);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(572, 32);
             this.panel8.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(79, 7);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // button40
+            // 
+            this.button40.Location = new System.Drawing.Point(423, 0);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(48, 32);
+            this.button40.TabIndex = 7;
+            this.button40.Text = "Save";
+            this.button40.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -211,10 +133,11 @@
             // 
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(290, 34);
+            this.panel3.Location = new System.Drawing.Point(272, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(572, 429);
             this.panel3.TabIndex = 7;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel6
             // 
@@ -309,11 +232,36 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.panel12);
-            this.panel2.Location = new System.Drawing.Point(41, 34);
+            this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 276);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.label3);
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(243, 29);
+            this.panel12.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Combo Personal #1";
+            // 
+            // panel13
+            // 
+            this.panel13.Location = new System.Drawing.Point(0, 32);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(566, 35);
+            this.panel13.TabIndex = 1;
             // 
             // panel1
             // 
@@ -334,10 +282,11 @@
             this.panel1.Controls.Add(this.button23);
             this.panel1.Controls.Add(this.button22);
             this.panel1.Controls.Add(this.button21);
-            this.panel1.Location = new System.Drawing.Point(41, 217);
+            this.panel1.Location = new System.Drawing.Point(12, 195);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 246);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button38
             // 
@@ -492,86 +441,33 @@
             this.button21.Text = "1";
             this.button21.UseVisualStyleBackColor = true;
             // 
-            // button40
-            // 
-            this.button40.Location = new System.Drawing.Point(423, 0);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(48, 32);
-            this.button40.TabIndex = 7;
-            this.button40.Text = "Save";
-            this.button40.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(79, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.label3);
-            this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(243, 29);
-            this.panel12.TabIndex = 3;
-            // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(0, 32);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(566, 35);
-            this.panel13.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Combo Personal #1";
-            // 
             // AgregarCombo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 462);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel10);
+            this.ClientSize = new System.Drawing.Size(858, 456);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AgregarCombo";
             this.Text = "AgregarCombo";
             this.Load += new System.EventHandler(this.AgregarCombo_Load);
-            this.panel10.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button40;

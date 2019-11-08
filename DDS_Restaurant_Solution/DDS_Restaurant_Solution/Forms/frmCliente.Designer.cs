@@ -29,71 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCliente));
-            this.DgvRegistroCliente = new System.Windows.Forms.DataGridView();
-            this.ColumNumIdentidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumTelef = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumGen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnAñadir = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvRegistroCliente)).BeginInit();
+            this.dgvMesas = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMesas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // DgvRegistroCliente
-            // 
-            this.DgvRegistroCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvRegistroCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumNumIdentidad,
-            this.ColumNombre,
-            this.ColumTelef,
-            this.ColumCorreo,
-            this.ColumGen});
-            this.DgvRegistroCliente.Location = new System.Drawing.Point(12, 12);
-            this.DgvRegistroCliente.Name = "DgvRegistroCliente";
-            this.DgvRegistroCliente.RowHeadersWidth = 51;
-            this.DgvRegistroCliente.RowTemplate.Height = 24;
-            this.DgvRegistroCliente.Size = new System.Drawing.Size(1033, 543);
-            this.DgvRegistroCliente.TabIndex = 0;
-            // 
-            // ColumNumIdentidad
-            // 
-            this.ColumNumIdentidad.HeaderText = "NumIdentidad";
-            this.ColumNumIdentidad.MinimumWidth = 9;
-            this.ColumNumIdentidad.Name = "ColumNumIdentidad";
-            this.ColumNumIdentidad.Width = 170;
-            // 
-            // ColumNombre
-            // 
-            this.ColumNombre.HeaderText = "NombreCompleto";
-            this.ColumNombre.MinimumWidth = 6;
-            this.ColumNombre.Name = "ColumNombre";
-            this.ColumNombre.Width = 300;
-            // 
-            // ColumTelef
-            // 
-            this.ColumTelef.HeaderText = "NumTelefono";
-            this.ColumTelef.MinimumWidth = 6;
-            this.ColumTelef.Name = "ColumTelef";
-            this.ColumTelef.Width = 140;
-            // 
-            // ColumCorreo
-            // 
-            this.ColumCorreo.HeaderText = "Correo";
-            this.ColumCorreo.MinimumWidth = 6;
-            this.ColumCorreo.Name = "ColumCorreo";
-            this.ColumCorreo.Width = 220;
-            // 
-            // ColumGen
-            // 
-            this.ColumGen.HeaderText = "Genero";
-            this.ColumGen.MinimumWidth = 6;
-            this.ColumGen.Name = "ColumGen";
-            this.ColumGen.Width = 150;
             // 
             // BtnAñadir
             // 
@@ -101,9 +45,10 @@
             this.BtnAñadir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAñadir.BackgroundImage")));
             this.BtnAñadir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnAñadir.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BtnAñadir.Location = new System.Drawing.Point(1094, 62);
+            this.BtnAñadir.Location = new System.Drawing.Point(700, 32);
+            this.BtnAñadir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnAñadir.Name = "BtnAñadir";
-            this.BtnAñadir.Size = new System.Drawing.Size(67, 44);
+            this.BtnAñadir.Size = new System.Drawing.Size(50, 36);
             this.BtnAñadir.TabIndex = 1;
             this.BtnAñadir.UseVisualStyleBackColor = false;
             // 
@@ -112,9 +57,10 @@
             this.BtnEliminar.BackColor = System.Drawing.Color.White;
             this.BtnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.BackgroundImage")));
             this.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnEliminar.Location = new System.Drawing.Point(1094, 149);
+            this.BtnEliminar.Location = new System.Drawing.Point(700, 81);
+            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(67, 44);
+            this.BtnEliminar.Size = new System.Drawing.Size(50, 36);
             this.BtnEliminar.TabIndex = 2;
             this.BtnEliminar.UseVisualStyleBackColor = false;
             // 
@@ -123,75 +69,81 @@
             this.BtnEditar.BackColor = System.Drawing.Color.White;
             this.BtnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEditar.BackgroundImage")));
             this.BtnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnEditar.Location = new System.Drawing.Point(1094, 240);
+            this.BtnEditar.Location = new System.Drawing.Point(700, 132);
+            this.BtnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(67, 44);
+            this.BtnEditar.Size = new System.Drawing.Size(50, 36);
             this.BtnEditar.TabIndex = 3;
             this.BtnEditar.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // dgvMesas
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1098, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Añadir";
+            this.dgvMesas.AllowUserToAddRows = false;
+            this.dgvMesas.AllowUserToDeleteRows = false;
+            this.dgvMesas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvMesas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMesas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgvMesas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 14F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMesas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMesas.ColumnHeadersHeight = 30;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMesas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMesas.EnableHeadersVisualStyles = false;
+            this.dgvMesas.Location = new System.Drawing.Point(12, 12);
+            this.dgvMesas.MultiSelect = false;
+            this.dgvMesas.Name = "dgvMesas";
+            this.dgvMesas.ReadOnly = true;
+            this.dgvMesas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMesas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMesas.RowHeadersVisible = false;
+            this.dgvMesas.RowTemplate.Height = 24;
+            this.dgvMesas.Size = new System.Drawing.Size(672, 437);
+            this.dgvMesas.TabIndex = 26;
             // 
-            // label2
+            // frmCliente
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1098, 196);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Eliminar";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1102, 287);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Editar";
-            // 
-            // Cliente
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1189, 567);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(778, 476);
+            this.Controls.Add(this.dgvMesas);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnAñadir);
-            this.Controls.Add(this.DgvRegistroCliente);
-            this.Name = "Cliente";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "frmCliente";
             this.Text = "Cliente";
-            ((System.ComponentModel.ISupportInitialize)(this.DgvRegistroCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMesas)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView DgvRegistroCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumNumIdentidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumTelef;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumCorreo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumGen;
         private System.Windows.Forms.Button BtnAñadir;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnEditar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dgvMesas;
     }
 }

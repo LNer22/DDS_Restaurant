@@ -41,10 +41,10 @@ namespace DDS_Restaurant_Solution
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "User")
+            if (textBox1.Text == "Usuario")
             {
                 textBox1.Text = "";
-                textBox1.ForeColor = Color.Black;
+                textBox1.ForeColor = Color.White;
             }
             
         }
@@ -55,8 +55,8 @@ namespace DDS_Restaurant_Solution
         {
             if (textBox1.Text == "")
             {
-                textBox1.Text = "User";
-                textBox1.ForeColor = Color.Silver;
+                textBox1.Text = "Usuario";
+                textBox1.ForeColor = Color.White;
             }
         }
 
@@ -75,11 +75,11 @@ namespace DDS_Restaurant_Solution
 
         private void textBox2_Enter_1(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Password")
+            if (textBox2.Text == "Contraseña")
             {
                 textBox2.Text = "";
                 textBox2.UseSystemPasswordChar = true;
-                textBox2.ForeColor = Color.Black;
+                textBox2.ForeColor = Color.White;
             }
         }
 
@@ -88,8 +88,8 @@ namespace DDS_Restaurant_Solution
         {
             if (textBox2.Text == "")
             {
-                textBox2.Text = "Password";
-                textBox2.ForeColor = Color.Silver;
+                textBox2.Text = "Contraseña";
+                textBox2.ForeColor = Color.White;
                 textBox2.UseSystemPasswordChar = false;
             }
         }
@@ -103,6 +103,28 @@ namespace DDS_Restaurant_Solution
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        
+
+        private void Login_ForeColorChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 9)
+            {
+                button1.Focus();
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
