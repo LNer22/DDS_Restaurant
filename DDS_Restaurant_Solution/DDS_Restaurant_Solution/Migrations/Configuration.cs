@@ -9,7 +9,7 @@ namespace DDS_Restaurant_Solution.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(DDS_Restaurant_Solution.Models.DataContext context)

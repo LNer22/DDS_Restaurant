@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMesasOrdenes));
             this.panContenedor = new System.Windows.Forms.Panel();
+            this.pnlApp = new System.Windows.Forms.Panel();
             this.dgvMesas = new System.Windows.Forms.DataGridView();
             this.BtnParallevar = new System.Windows.Forms.Button();
             this.BtnCombinar = new System.Windows.Forms.Button();
@@ -48,15 +49,24 @@
             this.panContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(29)))), ((int)(((byte)(36)))));
             this.panContenedor.Controls.Add(this.dgvMesas);
             this.panContenedor.Controls.Add(this.BtnParallevar);
             this.panContenedor.Controls.Add(this.BtnCombinar);
             this.panContenedor.Controls.Add(this.BtnPagar);
             this.panContenedor.Controls.Add(this.BtnImprimir);
+            this.panContenedor.Controls.Add(this.pnlApp);
             this.panContenedor.Location = new System.Drawing.Point(0, 0);
             this.panContenedor.Name = "panContenedor";
             this.panContenedor.Size = new System.Drawing.Size(750, 449);
             this.panContenedor.TabIndex = 0;
+            // 
+            // pnlApp
+            // 
+            this.pnlApp.Location = new System.Drawing.Point(637, 222);
+            this.pnlApp.Name = "pnlApp";
+            this.pnlApp.Size = new System.Drawing.Size(200, 100);
+            this.pnlApp.TabIndex = 26;
             // 
             // dgvMesas
             // 
@@ -86,7 +96,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMesas.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvMesas.EnableHeadersVisualStyles = false;
-            this.dgvMesas.Location = new System.Drawing.Point(12, 0);
+            this.dgvMesas.Location = new System.Drawing.Point(12, 12);
             this.dgvMesas.MultiSelect = false;
             this.dgvMesas.Name = "dgvMesas";
             this.dgvMesas.ReadOnly = true;
@@ -101,7 +111,7 @@
             this.dgvMesas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMesas.RowHeadersVisible = false;
             this.dgvMesas.RowTemplate.Height = 24;
-            this.dgvMesas.Size = new System.Drawing.Size(672, 437);
+            this.dgvMesas.Size = new System.Drawing.Size(672, 425);
             this.dgvMesas.TabIndex = 25;
             this.dgvMesas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMesas_CellDoubleClick);
             // 
@@ -112,7 +122,7 @@
             this.BtnParallevar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnParallevar.BackgroundImage")));
             this.BtnParallevar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnParallevar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnParallevar.Location = new System.Drawing.Point(692, 120);
+            this.BtnParallevar.Location = new System.Drawing.Point(691, 132);
             this.BtnParallevar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnParallevar.Name = "BtnParallevar";
             this.BtnParallevar.Size = new System.Drawing.Size(50, 36);
@@ -126,7 +136,7 @@
             this.BtnCombinar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCombinar.BackgroundImage")));
             this.BtnCombinar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCombinar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnCombinar.Location = new System.Drawing.Point(692, 80);
+            this.BtnCombinar.Location = new System.Drawing.Point(691, 92);
             this.BtnCombinar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnCombinar.Name = "BtnCombinar";
             this.BtnCombinar.Size = new System.Drawing.Size(50, 36);
@@ -140,7 +150,7 @@
             this.BtnPagar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPagar.BackgroundImage")));
             this.BtnPagar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnPagar.Location = new System.Drawing.Point(692, 40);
+            this.BtnPagar.Location = new System.Drawing.Point(691, 52);
             this.BtnPagar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnPagar.Name = "BtnPagar";
             this.BtnPagar.Size = new System.Drawing.Size(50, 36);
@@ -155,7 +165,7 @@
             this.BtnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnImprimir.Cursor = System.Windows.Forms.Cursors.Default;
             this.BtnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnImprimir.Location = new System.Drawing.Point(692, 0);
+            this.BtnImprimir.Location = new System.Drawing.Point(691, 12);
             this.BtnImprimir.Margin = new System.Windows.Forms.Padding(2);
             this.BtnImprimir.Name = "BtnImprimir";
             this.BtnImprimir.Size = new System.Drawing.Size(50, 36);
@@ -188,5 +198,6 @@
         private System.Windows.Forms.Button BtnCombinar;
         private System.Windows.Forms.Button BtnPagar;
         private System.Windows.Forms.Button BtnImprimir;
+        private System.Windows.Forms.Panel pnlApp;
     }
 }

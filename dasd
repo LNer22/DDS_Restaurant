@@ -1,0 +1,60 @@
+[33mcommit 2ef7bc51be51c6f94a8b663a738ff80782cd4da0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Lissbeth Peralta <lissbethperalta71@gmail.com>
+Date:   Thu Nov 7 23:16:41 2019 -0600
+
+     Design Formularios
+
+[33mcommit ffd507c85370eca7622f79e3e7f4586258fb7e0e[m
+Merge: 63fdae9 cc8651e
+Author: Pedro Davila <pedrofranx@gmail.com>
+Date:   Wed Nov 6 19:06:01 2019 -0600
+
+    Merge remote-tracking branch 'refs/remotes/origin/master'
+
+[33mcommit cc8651e30e9540bf0c983bcfc0f4bc223598ed18[m
+Author: Lener Quiroz <quirozlener@gmail.com>
+Date:   Wed Nov 6 19:03:25 2019 -1200
+
+    Minor changes
+
+[33mcommit 63fdae9466eb764dfc89d9ade6cf7d3751dcc9dc[m
+Author: Pedro Davila <pedrofranx@gmail.com>
+Date:   Wed Nov 6 19:05:02 2019 -0600
+
+    Agregar combo-pedido
+
+[33mcommit f9af21b9f0853098186b545d460b0a4aaa96c283[m
+Author: Lener Quiroz <quirozlener@gmail.com>
+Date:   Tue Nov 5 01:29:47 2019 -1200
+
+    Login,frmPrincipal
+
+[33mcommit 3aad62f8f9b214b91cd7162576ecb95204948d02[m
+Author: guttty777 <gottty747@gmail.com>
+Date:   Sat Nov 2 22:52:02 2019 -0600
+
+    Nuevos formularios
+
+[33mcommit 391374bff2d2b60fb3b1820bb3a5d80e90b8c42a[m
+Author: Lissbeth Peralta <lissbethperalta71@gmail.com>
+Date:   Thu Oct 31 02:12:15 2019 -0600
+
+     Form Design Add Client, Add Employee, Add Table
+
+[33mcommit b5aa4fb86d469432168dbc2099965f71697a06ce[m
+Author: Lissbeth Peralta <lissbethperalta71@gmail.com>
+Date:   Thu Oct 31 00:52:29 2019 -0600
+
+    login design
+
+[33mcommit a271ae2cc0cb82aa96a4f4b109fbfdbf8d618903[m
+Author: Lener Quiroz <quirozlener@gmail.com>
+Date:   Sun Oct 27 15:16:05 2019 -1200
+
+    Database Models
+
+[33mcommit a87213c692343349411cb0d2771eb97d57efb012[m
+Author: Lener Quiroz <quirozlener@gmail.com>
+Date:   Wed Oct 9 18:21:17 2019 -1200
+
+    Proyecto WF vacío

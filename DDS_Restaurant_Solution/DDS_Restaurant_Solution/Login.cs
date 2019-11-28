@@ -16,42 +16,52 @@ namespace DDS_Restaurant_Solution
         {
             InitializeComponent();
         }
-        
-
-        private void button1_Click(object sender, EventArgs e)
+        private void log()
         {
-            if (textBox1.Text != "" && textBox1.Text != "")
+            if (textBox1.Text != "Usuario")
             {
-                string login = Data.DataAccess.login(textBox1.Text, Data.GeneralClass.SHA1(textBox2.Text));
-                if (login == "OK")
+
+                if (textBox2.Text != "Contraseña")
                 {
-                    DialogResult = DialogResult.OK;
-                }
-                else if (login == "Disabled")
-                {
-                    MessageBox.Show("User disabled");
+                    string login = Data.DataAccess.login(textBox1.Text, textBox2.Text);
+                    if (login == "OK")
+                    {
+                        DialogResult = DialogResult.OK;
+
+                    }
+                    else if (login == "Disabled")
+                    {
+                        MessageBox.Show("User disabled");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario y/o contraseña invalidos");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Usuario y/o contraseña invalidos");
+                    errorProvider1.SetError(textBox2, "Ingrese su contraseña");
+                }
+            }
+            else
+            {
+                if (textBox1.Text == "Usuario")
+                {
+                    errorProvider1.SetError(textBox1,"Ingrese su usuario");
                 }
             }
         }
-        
 
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void textBox1_Enter_1(object sender, EventArgs e)
         {
             if (textBox1.Text == "Usuario")
             {
                 textBox1.Text = "";
                 textBox1.ForeColor = Color.White;
             }
-            
         }
-        
-        
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void textBox1_Leave_1(object sender, EventArgs e)
         {
             if (textBox1.Text == "")
             {
@@ -60,71 +70,75 @@ namespace DDS_Restaurant_Solution
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            if (textBox2.UseSystemPasswordChar == true)
-            {
-                textBox2.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                textBox2.UseSystemPasswordChar = true;
-            }
-        }
-        
-
-        private void textBox2_Enter_1(object sender, EventArgs e)
+        private void textBox2_Enter(object sender, EventArgs e)
         {
             if (textBox2.Text == "Contraseña")
             {
                 textBox2.Text = "";
-                textBox2.UseSystemPasswordChar = true;
+                textBox2.isPassword = true;
                 textBox2.ForeColor = Color.White;
             }
         }
 
-
-        private void textBox2_Leave_1(object sender, EventArgs e)
+        private void textBox2_Leave(object sender, EventArgs e)
         {
             if (textBox2.Text == "")
             {
                 textBox2.Text = "Contraseña";
                 textBox2.ForeColor = Color.White;
-                textBox2.UseSystemPasswordChar = false;
+                textBox2.isPassword = false;
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            log();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (textBox2.isPassword == true)
+            {
+                textBox2.isPassword = false;
+            }
+            else
+            {
+                textBox2.isPassword = true;
+            }
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void btnMinimize_Click(object sender, EventArgs e)
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void Login_ForeColorChanged(object sender, EventArgs e)
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            if (e.KeyChar == 13)
+            {
+                log();
+            }
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 9)
+            if (e.KeyChar == 13)
             {
-                button1.Focus();
+                log();
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar == 13)
+            {
+                log();
+            }
         }
     }
 }

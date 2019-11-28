@@ -13,6 +13,9 @@ namespace DDS_Restaurant_Solution.Models
         [Key]
         public int idMesa { get; set; }
 
+        [MaxLength(3)]
+        public string numMesa { get; set; }
+
         [MaxLength(2)]
         public string capacidad { get; set; }
 

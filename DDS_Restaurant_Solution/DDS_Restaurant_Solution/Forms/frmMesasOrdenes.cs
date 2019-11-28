@@ -18,16 +18,17 @@ namespace DDS_Restaurant_Solution.Forms
         }
         private void AbrirFormularioHijo(object frmHijo)
         {
-            if (panContenedor.Controls.Count > 0)
-                panContenedor.Controls.RemoveAt(0);
+            if (pnlApp.Controls.Count > 0)
+                pnlApp.Controls.RemoveAt(0);
+            pnlApp.BringToFront();
+            pnlApp.Dock = DockStyle.Fill;
 
             Form frm = frmHijo as Form;
 
             frm.TopLevel = false;
             frm.Dock = DockStyle.Fill;
-
-            panContenedor.Controls.Add(frm);
-            panContenedor.Tag = frm;
+            pnlApp.Controls.Add(frm);
+            pnlApp.Tag = frm;
             frm.Show();
 
         }
@@ -39,7 +40,7 @@ namespace DDS_Restaurant_Solution.Forms
         private void dgvMesas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int id = Convert.ToInt32(dgvMesas.CurrentRow.Cells[0].Value);
-            //AbrirFormularioHijo(new frmDetalle());
+            AbrirFormularioHijo(new Forms.AgregarPedido());
             MessageBox.Show($"ID:{id}");
         }
 
