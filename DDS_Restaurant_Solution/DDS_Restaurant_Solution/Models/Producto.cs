@@ -16,6 +16,11 @@ namespace DDS_Restaurant_Solution.Models
         [MaxLength(25)]
         public string descripcion { get; set; }
 
+        public bool estado { get; set; }
+
+        [Column(TypeName ="money")]
+        public decimal precio { get; set; }
+
         public int idTipoProducto { get; set; }
         [ForeignKey("idTipoProducto")]
         public TipoProducto TipoProducto { get; set; }

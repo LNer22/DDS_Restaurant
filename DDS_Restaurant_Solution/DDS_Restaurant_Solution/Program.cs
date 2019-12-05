@@ -16,7 +16,7 @@ namespace DDS_Restaurant_Solution
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Forms.AgregarPedido());
+            //Application.Run(new Forms.frmPrincipal());
             Login frmLogin = new Login();
             if (frmLogin.ShowDialog() == DialogResult.OK)
             {

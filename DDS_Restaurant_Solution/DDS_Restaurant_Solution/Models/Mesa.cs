@@ -21,6 +21,8 @@ namespace DDS_Restaurant_Solution.Models
 
         public bool estadoMesa { get; set; }
 
+        public bool activa { get; set; }
+
         public int idSucursal { get; set; }
         [ForeignKey("idSucursal")]
         public Sucursal Sucursal { get; set; }

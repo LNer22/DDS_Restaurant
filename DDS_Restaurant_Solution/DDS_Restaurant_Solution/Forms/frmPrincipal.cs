@@ -203,7 +203,19 @@ namespace DDS_Restaurant_Solution.Forms
             //AbrirFormularioHijo(new frmMesas());
             AbrirFormulario<frmMesas>();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmDetalle>();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmMesasOrdenes>();
+        }
+
         #endregion
+
         #endregion
         //private void btnSlideMenu_Click(object sender, EventArgs e)
         //{
@@ -220,6 +232,6 @@ namespace DDS_Restaurant_Solution.Forms
         //        //btnSlideMenu.Location = new Point(159, 0);
         //    }
         //}
-        
+
     }
 }

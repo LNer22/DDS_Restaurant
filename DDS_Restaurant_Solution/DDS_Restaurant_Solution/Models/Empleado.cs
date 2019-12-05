@@ -34,6 +34,8 @@ namespace DDS_Restaurant_Solution.Models
         [MaxLength(25)]
         public string correElectronico { get; set; }
 
+        public bool estado { get; set; }
+
         public int idMunicipio { get; set; }
         [ForeignKey("idMunicipio")]
         public Municipio Municipio { get; set; }

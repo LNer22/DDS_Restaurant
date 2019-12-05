@@ -180,6 +180,7 @@
             this.button7.Text = "Menú";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             this.button7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button7_MouseMove);
             // 
             // label2
@@ -458,6 +459,7 @@
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.panVertical.ResumeLayout(false);
             this.panVertical.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

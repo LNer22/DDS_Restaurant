@@ -83,7 +83,7 @@ namespace DDS_Restaurant_Solution.Forms
             DialogResult dialogResult = MessageBox.Show("Are u sure?", "Elminar Mesa", MessageBoxButtons.YesNo);
             if (dialogResult.ToString() == DialogResult.Yes.ToString())
             {
-                Data.DataAccess.deleteM(Data.DataAccess.devM(Convert.ToInt32(dgvMesas.CurrentRow.Cells[0].Value)));
+                Data.DataAccess.deleteM(Convert.ToInt32(dgvMesas.CurrentRow.Cells[0].Value),false );
                 Data.DataAccess.cargarMesas(dgvMesas);
             }
 
@@ -91,7 +91,8 @@ namespace DDS_Restaurant_Solution.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Data.DataAccess.updateME(Convert.ToInt32(dgvMesas.CurrentRow.Cells[0].Value), true);
+            Data.DataAccess.cargarMesas(dgvMesas);
         }
     }
 }

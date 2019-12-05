@@ -58,7 +58,8 @@ namespace DDS_Restaurant_Solution.Forms
                     numMesa = Convert.ToString(numNum.Value),
                     capacidad = Convert.ToString(numericUpDown1.Value),
                     idSucursal = Convert.ToInt32(comboBox1.SelectedValue),
-                    estadoMesa = true
+                    estadoMesa = true,
+                    activa = true
                 };
 
                 Data.DataAccess.añadirMesa(m);
