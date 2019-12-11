@@ -51,6 +51,7 @@ namespace DDS_Restaurant_Solution.Forms
                 //comboBox1.Text = frmDetalle.tipoP;
                 //selectItemVyValue(comboBox1, frmDetalle.tipoP);
                 textBox1.Text = frmDetalle.desc;
+                numericUpDown1.Value = frmDetalle.pre;
             }
         }
 

@@ -214,6 +214,11 @@ namespace DDS_Restaurant_Solution.Forms
             AbrirFormulario<frmMesasOrdenes>();
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmCliente>();
+        }
+
         #endregion
 
         #endregion

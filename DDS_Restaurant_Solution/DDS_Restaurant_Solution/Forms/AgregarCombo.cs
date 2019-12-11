@@ -13,6 +13,8 @@ namespace DDS_Restaurant_Solution.Forms
 {
     public partial class AgregarCombo : Form
     {
+        public static int id = 0;
+        int idd = id;
         float PTotal = 0;
         string cnnStr = Properties.Settings.Default.cnnStr.ToString();
         static Models.DataContext ctx = new Models.DataContext();
@@ -94,9 +96,36 @@ namespace DDS_Restaurant_Solution.Forms
             }
         }
 
+        public void cargarEditar()
+        {
+            var itms = (from c in ctx.DetalleMenus
+                         where c.idMenu == id
+                         select new
+                         {
+                             c.idProducto,
+                             c.Productos.descripcion,
+                             c.cantidad,
+                             c.Productos.precio,
+                             c.Menu.descuento,
+                             c.Menu.nombre
+                         }).ToList();
+            textBox2.Text = itms[1].nombre.ToString();
+            numericUpDown1.Value = Convert.ToDecimal((itms[1].descuento / 100));
+            foreach (var item in itms)
+            {
+                var itemss = new ListViewItem(new[] { item.idProducto.ToString(), item.descripcion.ToString(), item.cantidad.ToString(),Math.Round(item.cantidad * item.precio,2).ToString() });
+                lvwDetalle.Items.Add(itemss);
+            }
+        }
+
         private void AgregarCombo_Load(object sender, EventArgs e)
         {
             cargarTab(tbProductos);
+            if (id != 0)
+            {
+                cargarEditar();
+                calcular();
+            }
         }
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -172,32 +201,76 @@ namespace DDS_Restaurant_Solution.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Models.Menu menu = new Models.Menu
+            if (idd == 0)
             {
-                nombre = textBox2.Text,
-                fechaCreacion = DateTime.Today,
-                estado = true
-            };
-            int id = Data.DataAccess.añadirCombo(menu);
-            foreach (ListViewItem item in lvwDetalle.Items)
-            {
-                Models.DetalleMenu detalle = new Models.DetalleMenu
-                { 
-                    cantidad = Convert.ToInt32(item.SubItems[2].Text),
-                    idMenu = id,
-                    idProducto = Convert.ToInt32(item.SubItems[0].Text)
+                Models.Menu menu = new Models.Menu
+                {
+                    nombre = textBox2.Text,
+                    fechaCreacion = DateTime.Today,
+                    estado = true,
+                    descuento = float.Parse((numericUpDown1.Value / 100).ToString())
                 };
-                Data.DataAccess.añadirDetalle(detalle);
-            }
-            Models.Precios precios = new Models.Precios
-            {
-                idMenu = id,
-                activo = true,
-                precio = PTotal
-            };
-            Data.DataAccess.añadirPrecio(precios);
+                int id = Data.DataAccess.añadirCombo(menu);
+                foreach (ListViewItem item in lvwDetalle.Items)
+                {
+                    Models.DetalleMenu detalle = new Models.DetalleMenu
+                    { 
+                        cantidad = Convert.ToInt32(item.SubItems[2].Text),
+                        idMenu = id,
+                        idProducto = Convert.ToInt32(item.SubItems[0].Text)
+                    };
+                    Data.DataAccess.añadirDetalle(detalle);
+                }
+                Models.Precios precios = new Models.Precios
+                {
+                    idMenu = id,
+                    activo = true,
+                    precio = PTotal
+                };
+                Data.DataAccess.añadirPrecio(precios);
 
-            Close();
+                Close();
+            }
+            else
+            {
+                
+                var datos = (from c in ctx.Menus
+                                where c.idMenu == id
+                                select c).SingleOrDefault();
+                datos.nombre = textBox2.Text;
+                datos.descuento = float.Parse((numericUpDown1.Value).ToString());
+                foreach (ListViewItem item in lvwDetalle.Items)
+                {
+                    int iddd = Convert.ToInt32(item.SubItems[0].Text);
+                    var datosss = (from c in ctx.DetalleMenus
+                                   where c.idProducto == iddd && c.idMenu == id
+                                   select c).SingleOrDefault();
+                    datosss.cantidad = Convert.ToInt32(item.SubItems[2].Text);
+                    //Models.DetalleMenu detalle = new Models.DetalleMenu
+                    //{
+                    //    cantidad = Convert.ToInt32(item.SubItems[2].Text),
+                    //    idMenu = id,
+                    //    idProducto = Convert.ToInt32(item.SubItems[0].Text)
+                    //};
+                    //Data.DataAccess.añadirDetalle(detalle);
+
+                }
+                //Models.Precios precios = new Models.Precios
+                //{
+                //    idMenu = id,
+                //    activo = true,
+                //    precio = PTotal
+                //};
+                //Data.DataAccess.añadirPrecio(precios);
+                var datoss = (from c in ctx.Precios
+                               where c.idMenu == id
+                               select c).SingleOrDefault();
+                datoss.precio = PTotal;
+                ctx.SaveChanges();
+                id = 0;
+                Close();
+
+            }
         }
     }
 }

@@ -234,6 +234,7 @@
             this.button8.Text = "Clientes";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             this.button8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button8_MouseMove);
             // 
             // button6

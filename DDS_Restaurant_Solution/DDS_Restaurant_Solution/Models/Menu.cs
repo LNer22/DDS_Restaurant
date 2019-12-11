@@ -20,5 +20,7 @@ namespace DDS_Restaurant_Solution.Models
         public DateTime fechaCreacion { get; set; }
 
         public bool estado { get; set; }
+
+        public float descuento { get; set; }
     }
 }

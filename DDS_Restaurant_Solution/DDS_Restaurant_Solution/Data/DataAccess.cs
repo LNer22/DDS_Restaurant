@@ -107,12 +107,26 @@ namespace DDS_Restaurant_Solution.Data
         public static void cargarClientes(DataGridView dgv)
         {
             var datos = (from c in ctx.Clientes
+                         where c.acctivo == true
                          orderby c.nombre descending
                          select new {N_Identidad = c.numIdentidad,Nombre_Completo = string.Concat(c.nombre.ToString() , " ", c.apellidos.ToString()),
                          Email = c.correoElectronico,Celular = c.celular.ToString(), Direccion = c.direccion,
                          Edad = DateTime.Today.Year - c.fechaNacimiento.Year, Genero = c.Genero.genero
                          }).ToList();
             dgv.DataSource = datos;
+        }
+        public static void añadirCliente(Cliente cliente)
+        {
+            ctx.Clientes.Add(cliente);
+            ctx.SaveChanges();
+        }
+        public static void eliminarCliente(string id, bool es)
+        {
+            var datos = (from c in ctx.Clientes
+                         where c.numIdentidad == id
+                         select c).SingleOrDefault();
+            datos.acctivo = es;
+            ctx.SaveChanges();
         }
         //***********PEDIDOS/ORDENES***********
         public static void cargarPedidos(DataGridView dgv)
@@ -206,12 +220,36 @@ namespace DDS_Restaurant_Solution.Data
                          {
                              c.Menu.nombre,
                              c.Productos.descripcion,
-                             c.cantidad
+                             c.cantidad,
                          } into dtll
                          select new {
                              dtll.Key.descripcion,
                              Nombre_del_combo = dtll.Key.nombre,
                              Cantidad = dtll.Key.cantidad
+                         }).ToList();
+            dgv.DataSource = datos;
+        }
+        public static void cargarMenu2(DataGridView dgv)
+        {
+            var datos = (from c in ctx.Precios
+                         where c.Menu.estado == true
+                         select new
+                         {
+                             c.idMenu,
+                             c.Menu.nombre,
+                             c.precio
+                         }).ToList();
+            dgv.DataSource = datos;
+        }
+        public static void cargarMenu3(DataGridView dgv, int id)
+        {
+            var datos = (from c in ctx.DetalleMenus
+                         where c.Menu.estado == true && c.idMenu == id
+                         select new
+                         {
+                             c.Productos.idProducto,
+                             c.Productos.descripcion,
+                             c.cantidad
                          }).ToList();
             dgv.DataSource = datos;
         }
@@ -356,6 +394,23 @@ namespace DDS_Restaurant_Solution.Data
             ctx.DetalleMenus.Add(menu);
             ctx.SaveChanges();
         }
-
+        public static void eliminarCombo(int id, bool es)
+        {
+            var datos = (from c in ctx.Menus
+                         where c.idMenu == id
+                         select c).SingleOrDefault();
+            datos.estado = es;
+            ctx.SaveChanges();
+        }
+        public static void updatePM(int id, int idTipo, string descripcion, decimal precio)
+        {
+            var datos = (from c in ctx.Productos
+                         where c.idProducto == id
+                         select c).SingleOrDefault();
+            datos.idTipoProducto = idTipo;
+            datos.descripcion = descripcion;
+            datos.precio = precio;
+            ctx.SaveChanges();
+        }
     }
 }
