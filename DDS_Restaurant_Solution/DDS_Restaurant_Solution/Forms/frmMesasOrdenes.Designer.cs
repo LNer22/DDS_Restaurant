@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMesasOrdenes));
             this.panContenedor = new System.Windows.Forms.Panel();
-            this.pnlApp = new System.Windows.Forms.Panel();
             this.dgvMesas = new System.Windows.Forms.DataGridView();
             this.BtnParallevar = new System.Windows.Forms.Button();
             this.BtnCombinar = new System.Windows.Forms.Button();
@@ -55,18 +54,10 @@
             this.panContenedor.Controls.Add(this.BtnCombinar);
             this.panContenedor.Controls.Add(this.BtnPagar);
             this.panContenedor.Controls.Add(this.BtnImprimir);
-            this.panContenedor.Controls.Add(this.pnlApp);
             this.panContenedor.Location = new System.Drawing.Point(0, 0);
             this.panContenedor.Name = "panContenedor";
             this.panContenedor.Size = new System.Drawing.Size(750, 449);
             this.panContenedor.TabIndex = 0;
-            // 
-            // pnlApp
-            // 
-            this.pnlApp.Location = new System.Drawing.Point(637, 222);
-            this.pnlApp.Name = "pnlApp";
-            this.pnlApp.Size = new System.Drawing.Size(200, 100);
-            this.pnlApp.TabIndex = 26;
             // 
             // dgvMesas
             // 
@@ -113,7 +104,6 @@
             this.dgvMesas.RowTemplate.Height = 24;
             this.dgvMesas.Size = new System.Drawing.Size(672, 425);
             this.dgvMesas.TabIndex = 25;
-            this.dgvMesas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMesas_CellDoubleClick);
             // 
             // BtnParallevar
             // 
@@ -171,7 +161,6 @@
             this.BtnImprimir.Size = new System.Drawing.Size(50, 36);
             this.BtnImprimir.TabIndex = 17;
             this.BtnImprimir.UseVisualStyleBackColor = false;
-            this.BtnImprimir.Click += new System.EventHandler(this.BtnImprimir_Click_1);
             // 
             // frmMesasOrdenes
             // 
@@ -198,6 +187,5 @@
         private System.Windows.Forms.Button BtnCombinar;
         private System.Windows.Forms.Button BtnPagar;
         private System.Windows.Forms.Button BtnImprimir;
-        private System.Windows.Forms.Panel pnlApp;
     }
 }
