@@ -19,6 +19,10 @@ namespace DDS_Restaurant_Solution.Models
         [ForeignKey("idPedido")]
         public Pedido Ordenes { get; set; }
 
+        public int idProducto { get; set; }
+        [ForeignKey("idProducto")]
+        public Producto Producto { get; set; }
+
         public int idMenu { get; set; }
         [ForeignKey("idMenu")]
         public Menu Menu { get; set; }

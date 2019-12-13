@@ -132,7 +132,7 @@ namespace DDS_Restaurant_Solution.Forms
             Button botoncito = sender as Button;
             char[] spearator = { '$' };
             string[] pre = botoncito.Text.Split(spearator, StringSplitOptions.RemoveEmptyEntries);
-            var itemss = new ListViewItem(new[] { botoncito.Tag.ToString(), botoncito.Text.ToString(), "1", pre[1] });
+            var itemss = new ListViewItem(new[] { botoncito.Tag.ToString(), pre[0], "1", pre[1] });
             if (lvwDetalle.Items.Count > 0)
             {
                 ListViewItem itemLV = lvwDetalle.FindItemWithText(itemss.Text);

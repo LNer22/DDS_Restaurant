@@ -99,75 +99,75 @@ namespace DDS_Restaurant_Solution.Forms
         #region "Mouse Move"
         private void panVertical_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 47)
-            {
-                panVertical.Width = 182;
-            }
+            //if (panVertical.Width == 47)
+            //{
+            //    panVertical.Width = 182;
+            //}
         }
 
         private void panContenedors_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 182)
-            {
-                panVertical.Width = 47;
-            }
+            //if (panVertical.Width == 182)
+            //{
+            //    panVertical.Width = 47;
+            //}
         }
 
         private void bunifuGradientPanel1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 182)
-            {
-                panVertical.Width = 47;
-            }
-            ReleaseCapture();
-            SendMessage(Handle, 0x112, 0xf012, 0);
+            //if (panVertical.Width == 182)
+            //{
+            //    panVertical.Width = 47;
+            //}
+            //ReleaseCapture();
+            //SendMessage(Handle, 0x112, 0xf012, 0);
         }
         private void button6_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 47)
-            {
-                panVertical.Width = 182;
-            }
+            //if (panVertical.Width == 47)
+            //{
+            //    panVertical.Width = 182;
+            //}
         }
 
         private void button5_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 47)
-            {
-                panVertical.Width = 182;
-            }
+            //if (panVertical.Width == 47)
+            //{
+            //    panVertical.Width = 182;
+            //}
         }
 
         private void button4_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 47)
-            {
-                panVertical.Width = 182;
-            }
+            //if (panVertical.Width == 47)
+            //{
+            //    panVertical.Width = 182;
+            //}
         }
 
         private void button9_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 47)
-            {
-                panVertical.Width = 182;
-            }
+            //if (panVertical.Width == 47)
+            //{
+            //    panVertical.Width = 182;
+            //}
         }
 
         private void button8_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 47)
-            {
-                panVertical.Width = 182;
-            }
+            //if (panVertical.Width == 47)
+            //{
+            //    panVertical.Width = 182;
+            //}
         }
 
         private void button7_MouseMove(object sender, MouseEventArgs e)
         {
-            if (panVertical.Width == 47)
-            {
-                panVertical.Width = 182;
-            }
+            //if (panVertical.Width == 47)
+            //{
+            //    panVertical.Width = 182;
+            //}
         }
         #endregion
         #region "Links"

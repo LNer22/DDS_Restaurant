@@ -71,10 +71,10 @@
             this.panContenedors.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(29)))), ((int)(((byte)(36)))));
             this.panContenedors.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(29)))), ((int)(((byte)(36)))));
             this.panContenedors.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(29)))), ((int)(((byte)(36)))));
-            this.panContenedors.Location = new System.Drawing.Point(182, 26);
+            this.panContenedors.Location = new System.Drawing.Point(47, 26);
             this.panContenedors.Name = "panContenedors";
             this.panContenedors.Quality = 10;
-            this.panContenedors.Size = new System.Drawing.Size(739, 511);
+            this.panContenedors.Size = new System.Drawing.Size(874, 511);
             this.panContenedors.TabIndex = 12;
             this.panContenedors.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panContenedors_MouseMove);
             // 
@@ -104,7 +104,7 @@
             this.panVertical.Location = new System.Drawing.Point(0, 26);
             this.panVertical.Name = "panVertical";
             this.panVertical.Quality = 10;
-            this.panVertical.Size = new System.Drawing.Size(182, 511);
+            this.panVertical.Size = new System.Drawing.Size(47, 511);
             this.panVertical.TabIndex = 11;
             this.panVertical.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panVertical_MouseMove);
             // 
