@@ -10,7 +10,7 @@ namespace DDS_Restaurant_Solution.Models
 {
     public class Pedido
     {
-        [Key]
+        [Key,DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int idPedido { get; set; }
         
         public DateTime fecha { get; set; }
@@ -26,6 +26,8 @@ namespace DDS_Restaurant_Solution.Models
         [ForeignKey("idMesa")]
         public Mesa Mesa { get; set; }
 
-
+        public int idUsuario { get; set; }
+        [ForeignKey("idUsuario")]
+        public Usuario Usuario { get; set; }
     }
 }

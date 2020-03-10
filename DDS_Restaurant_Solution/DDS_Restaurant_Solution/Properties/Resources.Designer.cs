@@ -63,6 +63,26 @@ namespace DDS_Restaurant_Solution.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anadirWhite {
+            get {
+                object obj = ResourceManager.GetObject("anadirWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap candado_abierto_White {
+            get {
+                object obj = ResourceManager.GetObject("candado_abierto_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap casa {
             get {
                 object obj = ResourceManager.GetObject("casa", resourceCulture);
@@ -86,6 +106,16 @@ namespace DDS_Restaurant_Solution.Properties {
         internal static System.Drawing.Bitmap comida {
             get {
                 object obj = ResourceManager.GetObject("comida", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editarWhite {
+            get {
+                object obj = ResourceManager.GetObject("editarWhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +163,9 @@ namespace DDS_Restaurant_Solution.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap key1 {
+        internal static System.Drawing.Bitmap logo {
             get {
-                object obj = ResourceManager.GetObject("key1", resourceCulture);
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +176,16 @@ namespace DDS_Restaurant_Solution.Properties {
         internal static System.Drawing.Bitmap maximize {
             get {
                 object obj = ResourceManager.GetObject("maximize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap min {
+            get {
+                object obj = ResourceManager.GetObject("min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +223,16 @@ namespace DDS_Restaurant_Solution.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap restar_White {
+            get {
+                object obj = ResourceManager.GetObject("restar_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap restore {
             get {
                 object obj = ResourceManager.GetObject("restore", resourceCulture);
@@ -203,6 +253,16 @@ namespace DDS_Restaurant_Solution.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tmblr {
+            get {
+                object obj = ResourceManager.GetObject("tmblr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
@@ -213,9 +273,9 @@ namespace DDS_Restaurant_Solution.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap User21 {
+        internal static System.Drawing.Bitmap x {
             get {
-                object obj = ResourceManager.GetObject("User21", resourceCulture);
+                object obj = ResourceManager.GetObject("x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

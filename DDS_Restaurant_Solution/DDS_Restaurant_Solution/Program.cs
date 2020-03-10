@@ -16,12 +16,12 @@ namespace DDS_Restaurant_Solution
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Forms.frmPrincipal());
+            Application.Run(new Forms.frmPrincipal());
             Login frmLogin = new Login();
-            if (frmLogin.ShowDialog() == DialogResult.OK)
-            {
-                Application.Run(new Forms.frmPrincipal());
-            }
+            //if (frmLogin.ShowDialog() == DialogResult.OK)
+            //{
+            //    Application.Run(new Forms.frmPrincipal());
+            //}
         }
     }
 }

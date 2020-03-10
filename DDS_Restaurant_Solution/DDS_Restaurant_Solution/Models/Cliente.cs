@@ -37,5 +37,7 @@ namespace DDS_Restaurant_Solution.Models
         public int idGenero { get; set; }
         [ForeignKey("idGenero")]
         public Genero Genero { get; set; }
+
+        public bool acctivo { get; set; }
     }
 }

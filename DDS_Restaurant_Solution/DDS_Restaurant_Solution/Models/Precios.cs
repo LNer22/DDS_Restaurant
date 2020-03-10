@@ -8,23 +8,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DDS_Restaurant_Solution.Models
 {
-    public class DetallePedido
+    public class Precios
     {
         [Key]
-        public int idDetalleOrden { get; set; }
-
-        public int cantidad { get; set; }
-
-        public int idPedido { get; set; }
-        [ForeignKey("idPedido")]
-        public Pedido Ordenes { get; set; }
-
-        public int idProducto { get; set; }
-        [ForeignKey("idProducto")]
-        public Producto Producto { get; set; }
+        public int idPrecio { get; set; }
 
         public int idMenu { get; set; }
         [ForeignKey("idMenu")]
         public Menu Menu { get; set; }
+
+        public float precio { get; set; }
+
+        public bool activo { get; set; }
     }
 }

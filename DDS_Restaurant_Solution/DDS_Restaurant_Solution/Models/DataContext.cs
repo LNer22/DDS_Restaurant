@@ -29,6 +29,7 @@
         public DbSet<TipoProducto> TipoProductos { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<DetallePedido> DetallePedidos { get; set; }
+        public DbSet<Precios> Precios { get; set; }
 
         
     }

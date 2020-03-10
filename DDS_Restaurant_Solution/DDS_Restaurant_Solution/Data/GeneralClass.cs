@@ -10,7 +10,6 @@ namespace DDS_Restaurant_Solution.Data
     public class GeneralClass
     {
         public static int IdUsuario { get; set; }
-        public static string nombreCompleto { get; set; }
         public static string SHA1(string text)
         {
             var data = Encoding.ASCII.GetBytes(text);

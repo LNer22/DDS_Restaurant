@@ -42,6 +42,7 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -84,6 +85,18 @@
     </Compile>
     <Compile Include="Forms\frmAñadirEmpleado.Designer.cs">
       <DependentUpon>frmAñadirEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAñadirMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAñadirMesa.Designer.cs">
+      <DependentUpon>frmAñadirMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAñadirProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAñadirProducto.Designer.cs">
+      <DependentUpon>frmAñadirProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmCliente.cs">
       <SubType>Form</SubType>
@@ -139,6 +152,7 @@
     <Compile Include="Models\Municipio.cs" />
     <Compile Include="Models\Pedido.cs" />
     <Compile Include="Models\Pais.cs" />
+    <Compile Include="Models\Precios.cs" />
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\Sucursal.cs" />
     <Compile Include="Models\DataContext.cs" />
@@ -159,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAñadirEmpleado.resx">
       <DependentUpon>frmAñadirEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAñadirMesa.resx">
+      <DependentUpon>frmAñadirMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAñadirProducto.resx">
+      <DependentUpon>frmAñadirProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
@@ -206,55 +226,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\51882.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\key.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\key.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\key1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\User2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\User2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\User21.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Eye.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Agregar Imagen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\carrito-de-compras-negro.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\food-menu-order-restaurant-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img_122068.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\juego-de-cubiertos-de-comedor-de-tres-piezas-en-siluetas.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\new-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pedidos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\purchase-order.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\maximize.png" />
@@ -290,16 +262,34 @@
     <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\atras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\proximo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\flecha-hacia-la-izquierda.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\flecha-derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmblr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadirWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado-abierto_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editarWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restar_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
